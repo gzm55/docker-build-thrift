@@ -2,7 +2,7 @@ FROM phusion/holy-build-box-64:2.0.1
 
 ## Ref: https://thrift.apache.org/docs/install/centos
 
-RUN set -eux \
+RUN set -ex \
     && cd /tmp \
     && source /hbb/activate \
     && echo Installing flex \
