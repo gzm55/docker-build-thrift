@@ -6,7 +6,7 @@ BOOST_VERSION=1.70.0
 VARIANTS='exe exe_gc_hardened shlib'
 
 function install_boost() (
-  set -ex
+  set -ex +u
 
   local VARIANT="$1"
   local PREFIX="/hbb_$VARIANT"
@@ -17,7 +17,7 @@ function install_boost() (
 
   tar xjf boost_*.tar.bz2
 
-  cd boost_*
+  cd boost_*/
 
   source "$PREFIX/activate"
 

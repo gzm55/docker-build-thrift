@@ -10,7 +10,7 @@ curl --fail -L -O https://ftp.gnu.org/gnu/bison/bison-3.4.1.tar.gz
 
 tar xzf bison-*.tar.gz
 
-cd bison-*
+cd bison-*/
 
 ./configure
 

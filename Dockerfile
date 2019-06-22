@@ -11,4 +11,4 @@ RUN set -eux \
     && /install-boost.sh \
     && cd / \
     && yum clean -y all \
-    && rm -rf /tmp/* /install-*.sh
+    && { rm -rf /tmp/* /install-*.sh || : ; }
