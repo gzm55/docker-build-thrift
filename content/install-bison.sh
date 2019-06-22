@@ -18,6 +18,8 @@ make
 
 make install
 
+strip -D -s -g --strip-dwo --strip-unneeded -x -X `which bison`
+
 cd /tmp
 
 rm -rf bison-*
